@@ -47,14 +47,14 @@ const newsData = [
     title: "Wisuda Periode I Meluluskan 1.240 Sarjana",
     date: "12 Agustus 2026",
     category: "Akademik",
-    desc: "Universitas Nexus menggelar prosesi wisuda dengan tingkat serapan kerja alumni mencapai 87% dalam enam bulan.",
-    content: `Universitas Nexus kembali menorehkan pencapaian membanggakan dengan menggelar Prosesi Wisuda Periode I Tahun Akademik 2025/2026. Sebanyak 1.240 wisudawan dari tujuh fakultas resmi dinyatakan lulus dan siap memasuki dunia profesional.
+    desc: "Universitas Al-Khairiyah menggelar prosesi wisuda dengan tingkat serapan kerja alumni mencapai 87% dalam enam bulan.",
+    content: `Universitas Al-Khairiyah kembali menorehkan pencapaian membanggakan dengan menggelar Prosesi Wisuda Periode I Tahun Akademik 2025/2026. Sebanyak 1.240 wisudawan dari tujuh fakultas resmi dinyatakan lulus dan siap memasuki dunia profesional.
 
-Rektor Universitas Nexus, Prof. Dr. Arief Wibowo, M.Pd., dalam sambutannya menegaskan bahwa angka serapan kerja alumni mencapai 87% dalam enam bulan pertama pasca kelulusan—melampaui rata-rata nasional perguruan tinggi sejenis. "Ini bukan sekadar angka. Ini bukti bahwa kurikulum berbasis kompetensi dan kemitraan industri kita benar-benar bekerja," ujarnya.
+Rektor Universitas Al-Khairiyah, Prof. Dr. Arief Wibowo, M.Pd., dalam sambutannya menegaskan bahwa angka serapan kerja alumni mencapai 87% dalam enam bulan pertama pasca kelulusan—melampaui rata-rata nasional perguruan tinggi sejenis. "Ini bukan sekadar angka. Ini bukti bahwa kurikulum berbasis kompetensi dan kemitraan industri kita benar-benar bekerja," ujarnya.
 
 Prosesi berlangsung khidmat di Graha Utama Kampus Pusat, dihadiri oleh orang tua wisudawan, sivitas akademika, serta para mitra industri strategis. Wisudawan terbaik tahun ini diraih oleh Salsabila Putri Andini dari Fakultas Ilmu Komputer dengan IPK 3,98 dan predikat Summa Cum Laude.
 
-Universitas Nexus juga mengumumkan program beasiswa purna wisuda bagi lulusan terbaik yang melanjutkan studi ke jenjang magister, sebagai bentuk komitmen berkelanjutan terhadap pengembangan sumber daya manusia Indonesia.`,
+Universitas Al-Khairiyah juga mengumumkan program beasiswa purna wisuda bagi lulusan terbaik yang melanjutkan studi ke jenjang magister, sebagai bentuk komitmen berkelanjutan terhadap pengembangan sumber daya manusia Indonesia.`,
   },
   {
     img: "/assets/images/news-2.jpg",
@@ -62,7 +62,7 @@ Universitas Nexus juga mengumumkan program beasiswa purna wisuda bagi lulusan te
     date: "05 Agustus 2026",
     category: "Riset",
     desc: "Tim peneliti fakultas kedokteran memperoleh hibah riset untuk pengembangan alat diagnostik cepat.",
-    content: `Tim peneliti dari Fakultas Kedokteran Universitas Nexus berhasil meraih hibah riset nasional senilai Rp 4,2 miliar dari Kementerian Riset dan Teknologi. Dana tersebut akan digunakan untuk mengembangkan prototipe alat diagnostik cepat berbasis biosensor yang mampu mendeteksi infeksi bakteri resistan antibiotik hanya dalam 15 menit.
+    content: `Tim peneliti dari Fakultas Kedokteran Universitas Al-Khairiyah berhasil meraih hibah riset nasional senilai Rp 4,2 miliar dari Kementerian Riset dan Teknologi. Dana tersebut akan digunakan untuk mengembangkan prototipe alat diagnostik cepat berbasis biosensor yang mampu mendeteksi infeksi bakteri resistan antibiotik hanya dalam 15 menit.
 
 Ketua tim peneliti, Dr. Melissa Hartono, Sp.PK., menjelaskan bahwa alat ini dirancang untuk digunakan di puskesmas dan fasilitas kesehatan tingkat pertama, sehingga dapat mempercepat pengambilan keputusan klinis di daerah-daerah yang memiliki keterbatasan akses laboratorium canggih.
 
@@ -76,7 +76,7 @@ Program ini juga membuka peluang kerja sama riset internasional, dengan dua inst
     date: "28 Juli 2026",
     category: "Fasilitas",
     desc: "Fasilitas baru mendukung mahasiswa dengan ruang diskusi, akses jurnal internasional, dan zona tenang.",
-    content: `Perpustakaan Pusat Universitas Nexus resmi membuka layanan 24 jam mulai Agustus 2026. Renovasi besar-besaran selama delapan bulan mengubah wajah perpustakaan menjadi pusat belajar modern yang dilengkapi berbagai fasilitas kelas dunia.
+    content: `Perpustakaan Pusat Universitas Al-Khairiyah resmi membuka layanan 24 jam mulai Agustus 2026. Renovasi besar-besaran selama delapan bulan mengubah wajah perpustakaan menjadi pusat belajar modern yang dilengkapi berbagai fasilitas kelas dunia.
 
 Fasilitas baru meliputi 12 ruang diskusi kedap suara berkapasitas 4–10 orang yang dapat dipesan secara online, zona belajar tenang dengan 200 kursi ergonomis, serta area kreatif dengan papan tulis digital dan proyektor portabel. Seluruh area kini terhubung dengan jaringan Wi-Fi 10 Gbps.
 
@@ -90,7 +90,7 @@ Kepala Perpustakaan, Dra. Yuni Setiawati, M.Hum., menyampaikan bahwa sistem pemi
     date: "19 Juli 2026",
     category: "Karier",
     desc: "Mahasiswa semester lanjut dapat mengikuti magang berdurasi satu semester dengan konversi SKS penuh.",
-    content: `Universitas Nexus meluncurkan Program Magang Bersertifikat (PMB) generasi terbaru yang menggandeng 40 perusahaan dan lembaga mitra dari berbagai sektor industri. Program ini membuka 850 posisi magang untuk mahasiswa semester 5 ke atas yang ingin mendapatkan pengalaman kerja nyata sambil tetap memenuhi beban studi.
+    content: `Universitas Al-Khairiyah meluncurkan Program Magang Bersertifikat (PMB) generasi terbaru yang menggandeng 40 perusahaan dan lembaga mitra dari berbagai sektor industri. Program ini membuka 850 posisi magang untuk mahasiswa semester 5 ke atas yang ingin mendapatkan pengalaman kerja nyata sambil tetap memenuhi beban studi.
 
 Keistimewaan program ini adalah konversi penuh 20 SKS untuk masa magang satu semester, sehingga mahasiswa tidak perlu khawatir ketertinggalan mata kuliah. Setiap peserta akan mendapatkan mentor dari perusahaan dan dosen pembimbing dari universitas secara bersamaan.
 
@@ -118,13 +118,13 @@ Juara umum NSF 2026 diraih oleh Fakultas Teknik dengan perolehan 4 medali emas, 
     date: "24 Juni 2026",
     category: "Internasional",
     desc: "Lebih dari 200 akademisi dari 12 negara membahas transisi energi dan kota cerdas di kampus Nexus.",
-    content: `Universitas Nexus sukses menjadi tuan rumah International Conference on Sustainable Technology (ICST) 2026, forum akademik bergengsi yang tahun ini diikuti oleh lebih dari 200 akademisi, peneliti, dan praktisi dari 12 negara di Asia, Eropa, dan Amerika.
+    content: `Universitas Al-Khairiyah sukses menjadi tuan rumah International Conference on Sustainable Technology (ICST) 2026, forum akademik bergengsi yang tahun ini diikuti oleh lebih dari 200 akademisi, peneliti, dan praktisi dari 12 negara di Asia, Eropa, dan Amerika.
 
 Konferensi berlangsung selama tiga hari di Gedung Pascasarjana Nexus, mengangkat tema besar "Energy Transition and Smart Cities: Bridging Research and Policy." Sebanyak 87 makalah ilmiah dipresentasikan dalam sesi paralel, mencakup topik energi terbarukan, transportasi cerdas, pengelolaan limbah berbasis IoT, dan arsitektur kota masa depan.
 
 Keynote speaker tahun ini adalah Prof. Dr. Ing. Klaus Müller dari Technische Universität München dan Dr. Priya Ramachandran dari National University of Singapore, keduanya pakar terkemuka di bidang smart grid dan urban sustainability.
 
-Dari konferensi ini, Universitas Nexus berhasil menjajaki tiga nota kesepahaman (MoU) baru dengan institusi dari Belanda, Jepang, dan Australia untuk kolaborasi riset dan pertukaran mahasiswa pascasarjana. Prosiding konferensi akan dipublikasikan dalam jurnal terindeks Scopus pada September 2026.`,
+Dari konferensi ini, Universitas Al-Khairiyah berhasil menjajaki tiga nota kesepahaman (MoU) baru dengan institusi dari Belanda, Jepang, dan Australia untuk kolaborasi riset dan pertukaran mahasiswa pascasarjana. Prosiding konferensi akan dipublikasikan dalam jurnal terindeks Scopus pada September 2026.`,
   },
 ];
 
@@ -439,18 +439,20 @@ export default function Home() {
         id="navbar"
         className={`fixed left-1/2 top-3 z-50 -translate-x-1/2 transition-all duration-500 ${shrink ? "shrink" : ""}`}
       >
-        <nav className="island flex items-center gap-3 rounded-full px-3 py-2 sm:px-4 w-[calc(100vw-1.5rem)] sm:w-[calc(100vw-2rem)] max-w-6xl">
+        <nav className="island flex items-center justify-center gap-3 rounded-full px-3 py-2 sm:px-4 w-[calc(100vw-1.5rem)] sm:w-[calc(100vw-2rem)] max-w-6xl">
           <a
             href="#home"
             className="flex shrink-0 items-center gap-2 pl-1 pr-2"
           >
-            <span className="logo-mark">N</span>
+            <span className="logo-mark">
+              <Image src={"/unival.webp"} height={500} width={500} alt="unival" />
+            </span>
             <span className="hidden sm:block leading-tight">
               <span className="block font-display text-sm font-800 font-bold tracking-tight">
-                Universitas Nexus
+                Universitas Al-Khairiyah
               </span>
               <span className="block text-[10px] tracking-[0.18em] text-brand-500 dark:text-brand-200">
-                DISCOVER · INNOVATE
+                Kampus Peradaban Islam
               </span>
             </span>
           </a>
@@ -552,7 +554,7 @@ export default function Home() {
         >
           <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
             <Reveal>
-              <span className="pill">Akreditasi Unggul · Est. 1978</span>
+              <span className="pill">Excellent · Innovative. Santri's Character</span>
               <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
                 Membentuk Generasi{" "}
                 <span className="text-gradient">
@@ -560,9 +562,8 @@ export default function Home() {
                 </span>
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-300 sm:text-lg">
-                Universitas Nexus menghadirkan pendidikan tinggi berbasis riset,
-                teknologi, dan nilai kemanusiaan. 42 program studi, laboratorium
-                modern, serta ekosistem kampus digital yang terintegrasi.
+              <b>Universitas Al-Khairiyah</b>  menghadirkan pendidikan tinggi berbasis riset,
+              teknologi, dan nilai keagamaan. Terletak di pusat jantung kota Cilegon yang strategis, serta ekosistem kampus digital yang saling terintegrasi.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#pmb" className="btn-primary btn-lg">
@@ -597,10 +598,10 @@ export default function Home() {
                 <div className="tilt-card glass rounded-[2rem] p-3">
                   <img
                     src="/assets/images/hero-3d.jpg"
-                    alt="Visual 3D gedung Universitas Nexus"
+                    alt="Visual 3D gedung Universitas Al-Khairiyah"
                     width={1280}
                     height={1024}
-                    className="h-full w-full rounded-[1.5rem] object-cover"
+                    className="h-full w-full rounded-3xl object-cover"
                   />
                 </div>
                 <div className="floater glass absolute -left-3 top-10 hidden rounded-2xl px-4 py-3 sm:block">
@@ -630,7 +631,7 @@ export default function Home() {
               <div className="tilt-card glass rounded-[2rem] p-3">
                 <Image
                   src="/assets/images/about-campus.jpg"
-                  alt="Suasana kampus Universitas Nexus"
+                  alt="Suasana kampus Universitas Al-Khairiyah"
                   width={1280}
                   height={896}
                   loading="lazy"
@@ -661,7 +662,7 @@ export default function Home() {
                 Kampus Riset yang Tumbuh Bersama Masyarakat
               </h2>
               <p className="mt-4 text-slate-600 dark:text-slate-300">
-                Universitas Nexus adalah perguruan tinggi yang berfokus pada
+                Universitas Al-Khairiyah adalah perguruan tinggi yang berfokus pada
                 pendidikan berbasis riset, kolaborasi industri, dan pengabdian
                 masyarakat. Kami percaya bahwa ilmu pengetahuan harus berdampak
                 nyata bagi kehidupan sehari-hari.
@@ -1152,8 +1153,8 @@ export default function Home() {
               <Reveal delay={120}>
                 <div className="glass overflow-hidden rounded-[2rem] p-3">
                   <iframe
-                    title="Peta lokasi Universitas Nexus"
-                    className="h-[420px] w-full rounded-[1.5rem] border-0"
+                    title="Peta lokasi Universitas Al-Khairiyah"
+                    className="h-105 w-full rounded-3xl border-0"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=106.75%2C-6.32%2C106.90%2C-6.20&amp;layer=mapnik"
@@ -1166,16 +1167,18 @@ export default function Home() {
       </main>
 
       <footer className="px-4 pb-10 pt-10">
-        <div className="mx-auto max-w-6xl glass rounded-[2rem] p-8 sm:p-10">
+        <div className="mx-auto max-w-6xl glass rounded-4xl p-8 sm:p-10">
           <div className="grid gap-10 md:grid-cols-4">
             <div className="md:col-span-1">
-              <div className="flex items-center gap-2">
-                <span className="logo-mark">N</span>
+              <div className="flex flex-col items-center gap-2">
+                <span className="logo-mark">
+                  <Image src={"/unival.webp"} width={500} height={500} alt="unival"/>
+                </span>
                 <span className="font-display text-base font-bold">
-                  Universitas Nexus
+                  Universitas Al-Khairiyah
                 </span>
               </div>
-              <p className="mt-4 text-sm text-slate-600 dark:text-slate-300">
+              <p className="mt-4 text-sm text-slate-600 dark:text-slate-300 text-center">
                 Kampus riset modern yang berkomitmen mencetak lulusan unggul,
                 berintegritas, dan siap berkontribusi secara global.
               </p>
@@ -1258,7 +1261,7 @@ export default function Home() {
           </div>
           <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/20 pt-6 text-sm text-slate-500 dark:text-slate-400 sm:flex-row">
             <p>
-              © {currentYear} Universitas Nexus. Seluruh hak cipta dilindungi.
+              © {currentYear}. Seluruh hak cipta dilindungi.
             </p>
             <a href="#" className="link">
               Privacy Policy

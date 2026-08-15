@@ -160,8 +160,6 @@ body {
   height: 2.25rem;
   width: 2.25rem;
   border-radius: 0.9rem;
-  background: linear-gradient(140deg, #6764b4, var(--brand));
-  color: #fff;
   font-weight: 800;
   font-family: Sora, sans-serif;
   box-shadow:
