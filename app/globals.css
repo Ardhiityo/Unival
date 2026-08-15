@@ -817,3 +817,126 @@ body {
     transform: none;
   }
 }
+
+/* ---------- News Detail Modal ---------- */
+.news-detail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(11, 16, 48, 0.55);
+  backdrop-filter: blur(6px);
+  padding: 0;
+  animation: overlay-in 0.3s ease forwards;
+}
+
+@media (min-width: 640px) {
+  .news-detail-overlay {
+    align-items: center;
+    padding: 1.5rem;
+  }
+}
+
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.news-detail-panel {
+  position: relative;
+  width: 100%;
+  max-width: 54rem;
+  max-height: 92dvh;
+  overflow-y: auto;
+  border-radius: 2rem 2rem 0 0;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 -32px 80px -20px rgba(11, 16, 48, 0.6);
+  backdrop-filter: blur(24px) saturate(160%);
+  animation: panel-up 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  scrollbar-width: thin;
+  scrollbar-color: var(--brand-soft) transparent;
+}
+
+@media (min-width: 640px) {
+  .news-detail-panel {
+    border-radius: 2rem;
+    box-shadow: 0 48px 100px -30px rgba(11, 16, 48, 0.8);
+    animation: panel-scale 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+}
+
+@keyframes panel-up {
+  from { transform: translateY(60px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes panel-scale {
+  from { transform: scale(0.94) translateY(16px); opacity: 0; }
+  to   { transform: scale(1)    translateY(0);    opacity: 1; }
+}
+
+.news-detail-close {
+  position: sticky;
+  top: 1rem;
+  float: right;
+  margin: 1rem 1rem 0 0;
+  z-index: 10;
+}
+
+.news-detail-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: -3.5rem;
+}
+
+@media (min-width: 640px) {
+  .news-detail-img-wrap {
+    height: 22rem;
+    border-radius: 1.5rem;
+    margin: 1rem 1rem 0;
+    width: calc(100% - 2rem);
+  }
+}
+
+.news-detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-detail-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11, 16, 48, 0.5) 0%, transparent 60%);
+}
+
+.news-detail-img-meta {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.25rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.news-detail-body {
+  padding: 1.5rem 1.5rem 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .news-detail-body {
+    padding: 2rem 2.5rem 2.5rem;
+  }
+}
+
+.news-detail-divider {
+  margin: 1.5rem 0;
+  height: 1px;
+  background: var(--glass-border);
+}
