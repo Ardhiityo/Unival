@@ -296,9 +296,9 @@ export default function Home() {
 
       <header
         id="navbar"
-        className={`fixed inset-x-0 top-3 z-50 px-3 sm:px-4 transition-all duration-500 ${shrink ? "shrink" : ""}`}
+        className={`fixed left-1/2 top-3 z-50 -translate-x-1/2 transition-all duration-500 ${shrink ? "shrink" : ""}`}
       >
-        <nav className="island mx-auto flex max-w-6xl items-center gap-3 rounded-full px-3 py-2 sm:px-4">
+        <nav className="island flex items-center gap-3 rounded-full px-3 py-2 sm:px-4 w-[calc(100vw-1.5rem)] sm:w-[calc(100vw-2rem)] max-w-6xl">
           <a
             href="#home"
             className="flex shrink-0 items-center gap-2 pl-1 pr-2"
@@ -318,7 +318,7 @@ export default function Home() {
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
-                  className={`nav-link ${activeSection === item.href ? "active" : ""}`}
+                  className={`nav-link text-nowrap ${activeSection === item.href ? "active" : ""}`}
                   href={item.href}
                 >
                   {item.label}
@@ -357,27 +357,29 @@ export default function Home() {
                 <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
               </svg>
             </button>
-            <a href="#pmb" className="btn-primary hidden sm:inline-flex">
-              Daftar Sekarang
+            <a href="#pmb" className="btn-primary hidden sm:inline-flex text-nowrap">
+              Daftar
             </a>
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              type="button"
-              aria-label="Buka menu"
-              aria-expanded={menuOpen}
-              className={`icon-btn lg:hidden ${menuOpen ? "is-open" : ""}`}
-            >
-              <span className="burger">
-                <i></i>
-                <i></i>
-                <i></i>
-              </span>
-            </button>
+            <div className="lg:hidden">
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                type="button"
+                aria-label="Buka menu"
+                aria-expanded={menuOpen}
+                className={`icon-btn ${menuOpen ? "is-open" : ""}`}
+              >
+                <span className="burger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </span>
+              </button>
+            </div>
           </div>
         </nav>
 
         <div
-          className={`mobile-menu mx-auto mt-3 max-w-6xl lg:hidden ${menuOpen ? "open" : ""}`}
+          className={`mobile-menu mt-3 lg:hidden ${menuOpen ? "open" : ""}`}
           aria-hidden={!menuOpen}
         >
           <div className="glass rounded-3xl p-3">
