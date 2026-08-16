@@ -313,7 +313,7 @@ function NewsDetail({
 function StatSection({ countersStart }: { countersStart: boolean }) {
   return (
     <section id="statistik" className="px-4 py-6">
-      <div className="mx-auto max-w-6xl glass rounded-[2rem] p-6 sm:p-10">
+      <div className="mx-auto max-w-6xl glass rounded-4xl p-6 sm:p-10">
         <Reveal>
           <div className="grid gap-6 sm:grid-cols-3">
             <div className="stat-card">
@@ -451,7 +451,7 @@ export default function Home() {
               <span className="block font-display text-sm font-800 font-bold tracking-tight">
                 Universitas Al-Khairiyah
               </span>
-              <span className="block text-[10px] tracking-[0.18em] text-brand-500 dark:text-brand-200">
+              <span className="block text-[10px] font-bold tracking-[0.18em] text-brand-500 dark:text-brand-200">
                 Kampus Peradaban Islam
               </span>
             </span>
@@ -554,7 +554,7 @@ export default function Home() {
         >
           <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
             <Reveal>
-              <span className="pill">Excellent · Innovative. Santri's Character</span>
+              <span className="pill">Excellent · Innovative. {"Santri's "}Character</span>
               <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
                 Membentuk Generasi{" "}
                 <span className="text-gradient">
@@ -562,8 +562,8 @@ export default function Home() {
                 </span>
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-300 sm:text-lg">
-              <b>Universitas Al-Khairiyah</b>  menghadirkan pendidikan tinggi berbasis riset,
-              teknologi, dan nilai keagamaan. Terletak di pusat jantung kota Cilegon yang strategis, serta ekosistem kampus digital yang saling terintegrasi.
+                <b>Universitas Al-Khairiyah</b>  menghadirkan pendidikan tinggi berbasis riset,
+                teknologi, dan nilai keagamaan. Terletak di pusat jantung kota Cilegon yang strategis, serta ekosistem kampus digital yang saling terintegrasi.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#pmb" className="btn-primary btn-lg">
@@ -595,8 +595,8 @@ export default function Home() {
 
             <Reveal delay={120}>
               <div className="relative">
-                <div className="tilt-card glass rounded-[2rem] p-3">
-                  <img
+                <div className="tilt-card glass rounded-4xl p-3">
+                  <Image
                     src="/assets/images/hero-3d.jpg"
                     alt="Visual 3D gedung Universitas Al-Khairiyah"
                     width={1280}
@@ -628,19 +628,19 @@ export default function Home() {
         <section id="tentang" className="px-4 py-20 sm:py-28">
           <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
             <Reveal>
-              <div className="tilt-card glass rounded-[2rem] p-3">
+              <div className="tilt-card glass rounded-4xl p-3">
                 <Image
                   src="/assets/images/about-campus.jpg"
                   alt="Suasana kampus Universitas Al-Khairiyah"
                   width={1280}
                   height={896}
                   loading="lazy"
-                  className="w-full rounded-[1.5rem] object-cover"
+                  className="w-full rounded-3xl object-cover"
                 />
               </div>
-              <div className="mt-4 glass overflow-hidden rounded-[2rem] p-3">
+              <div className="mt-4 glass overflow-hidden rounded-4xl p-3">
                 <video
-                  className="w-full rounded-[1.5rem]"
+                  className="w-full rounded-3xl"
                   controls
                   preload="none"
                   poster="/assets/images/news-3.jpg"
@@ -723,7 +723,7 @@ export default function Home() {
 
             <div className="mt-12 grid gap-6 lg:grid-cols-5">
               <Reveal className="lg:col-span-2">
-                <div className="glass rounded-[2rem] p-8 h-full">
+                <div className="glass rounded-4xl p-8 h-full">
                   <span className="badge-num">Visi</span>
                   <p className="mt-5 font-display text-xl font-bold leading-snug sm:text-2xl">
                     &ldquo;Menjadi universitas riset terkemuka di Asia Tenggara
@@ -1046,7 +1046,7 @@ export default function Home() {
             </Reveal>
             <div className="mt-12 grid gap-6 lg:grid-cols-2">
               <Reveal>
-                <div className="glass rounded-[2rem] p-8">
+                <div className="glass rounded-4xl p-8">
                   <ul className="space-y-6">
                     <li className="contact-row">
                       <span className="svc-icon svc-icon-sm">
@@ -1151,7 +1151,7 @@ export default function Home() {
                 </div>
               </Reveal>
               <Reveal delay={120}>
-                <div className="glass overflow-hidden rounded-[2rem] p-3">
+                <div className="glass overflow-hidden rounded-4xl p-3">
                   <iframe
                     title="Peta lokasi Universitas Al-Khairiyah"
                     className="h-105 w-full rounded-3xl border-0"
@@ -1172,7 +1172,7 @@ export default function Home() {
             <div className="md:col-span-1">
               <div className="flex flex-col items-center gap-2">
                 <span className="logo-mark">
-                  <Image src={"/unival.webp"} width={500} height={500} alt="unival"/>
+                  <Image src={"/unival.webp"} width={500} height={500} alt="unival" />
                 </span>
                 <span className="font-display text-base font-bold">
                   Universitas Al-Khairiyah
