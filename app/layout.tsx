@@ -17,11 +17,11 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Universitas Nexus — Kampus Modern, Riset, dan Inovasi",
+  title: "Universitas Al-Khairiyah",
   description:
-    "Universitas Nexus adalah kampus modern dengan 42 program studi, riset unggulan, dan layanan digital terpadu untuk mahasiswa dan calon mahasiswa.",
+    "Universitas Al-Khairiyah adalah kampus modern dengan 42 program studi, riset unggulan, dan layanan digital terpadu untuk mahasiswa dan calon mahasiswa.",
   openGraph: {
-    title: "Universitas Nexus — Kampus Modern, Riset, dan Inovasi",
+    title: "Universitas Al-Khairiyah — Kampus Modern, Riset, dan Inovasi",
     description:
       "Kampus modern dengan 42 program studi, riset unggulan, dan layanan digital terpadu.",
     type: "website",

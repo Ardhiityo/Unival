@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -102,9 +103,9 @@ export default function Footer() {
                     <p>
                         © {currentYear}. Seluruh hak cipta dilindungi.
                     </p>
-                    <a href="#" className="link">
-                        Privacy Policy
-                    </a>
+                    <Link href="https://linkedin.com/in/ardhiityo" target="_blank" className="text-slate-500 dark:text-slate-400">
+                        Developed By <span className="text-slate-700 dark:text-slate-300">Arya Adhi Prasetyo</span>
+                    </Link>
                 </div>
             </div>
         </footer>

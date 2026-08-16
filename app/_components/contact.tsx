@@ -1,6 +1,8 @@
 "use client"
 
+import { FaFacebook, FaInstagram } from "react-icons/fa6"
 import Reveal from "./reveal"
+import { FaTiktok, FaYoutube } from "react-icons/fa"
 
 export default function Contact() {
     return (
@@ -83,35 +85,39 @@ export default function Contact() {
                                 </p>
                                 <div className="flex flex-wrap gap-3">
                                     <a
-                                        className="social"
+                                        className="social flex gap-1 items-center"
                                         href="https://instagram.com/universitasnexus"
                                         target="_blank"
                                         rel="noopener"
                                     >
+                                        <FaInstagram />
                                         Instagram
                                     </a>
                                     <a
-                                        className="social"
+                                        className="social flex items-center gap-1"
                                         href="https://facebook.com/universitasnexus"
                                         target="_blank"
                                         rel="noopener"
                                     >
+                                        <FaFacebook />
                                         Facebook
                                     </a>
                                     <a
-                                        className="social"
+                                        className="social flex items-center gap-1"
                                         href="https://youtube.com/@universitasnexus"
                                         target="_blank"
                                         rel="noopener"
                                     >
+                                        <FaYoutube />
                                         YouTube
                                     </a>
                                     <a
-                                        className="social"
+                                        className="social flex items-center gap-1"
                                         href="https://tiktok.com/@universitasnexus"
                                         target="_blank"
                                         rel="noopener"
                                     >
+                                        <FaTiktok />
                                         TikTok
                                     </a>
                                 </div>
