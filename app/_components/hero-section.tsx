@@ -35,7 +35,7 @@ export function HeroSection() {
             >
                 <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
                     <Reveal>
-                        <span className="pill">Excellent · Innovative. {"Santri's "}Character</span>
+                        <span className="pill">Excellent · Innovative · {"Santri's "}Character</span>
                         <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
                             Membentuk Generasi{" "}
                             <span className="text-gradient">
