@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "linkedin.com",
       },
+      {
+        protocol: "http",
+        hostname: "backend-unival.test",
+        port: "",
+        pathname: "/news/**",
+      },
     ],
   }
 };

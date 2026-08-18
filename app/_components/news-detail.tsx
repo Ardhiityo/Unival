@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { NewsItem } from "../types/general";
 import Image from "next/image";
+import DOMPurify from "dompurify";
 
 export default function NewsDetail({
     news,
@@ -49,34 +50,27 @@ export default function NewsDetail({
                 {/* Hero image */}
                 <div className="news-detail-img-wrap">
                     <Image
-                        src={news.img}
+                        src={news.image_url}
                         alt={news.title}
                         width={1200}
                         height={600}
+                        unoptimized
                         className="news-detail-img"
                     />
                     <div className="news-detail-img-overlay" />
-                    <div className="news-detail-img-meta">
-                        <span className="pill">{news.category}</span>
-                    </div>
                 </div>
 
                 {/* Content */}
                 <div className="news-detail-body">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-brand-400 dark:text-brand-200">
+                    <p className="text-xs font-bold uppercase tracking-widest text-brand-400 dark:text-brand-200">
                         {news.date}
                     </p>
                     <h2 className="section-title mt-3">{news.title}</h2>
-                    <p className="mt-3 font-semibold text-slate-600 dark:text-slate-300 leading-relaxed">
-                        {news.desc}
+                    <p className="mt-5 font-semibold text-slate-700 dark:text-slate-300 leading-relaxed"
+                        dangerouslySetInnerHTML={{
+                            __html: DOMPurify.sanitize(news.description),
+                        }}>
                     </p>
-                    <div className="news-detail-divider" />
-                    {news.content.split("\n\n").map((para, i) => (
-                        <p key={i} className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
-                            {para}
-                        </p>
-                    ))}
-
                     <div className="mt-8 flex flex-wrap gap-3">
                         <button onClick={onClose} className="btn-ghost">
                             ← Kembali ke Berita

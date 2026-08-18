@@ -1,10 +1,8 @@
 type newsData = {
-    img: string,
+    image_url: string,
     title: string,
     date: string,
-    category: string,
-    desc: string,
-    content: string,
+    description: string,
 };
 
 export type NewsItem = (newsData);
