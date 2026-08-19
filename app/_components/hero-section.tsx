@@ -39,12 +39,12 @@ export function HeroSection() {
                         <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
                             Membentuk Generasi{" "}
                             <span className="text-gradient">
-                                Unggul &amp; Berdaya Saing Global
+                                Baik &amp; Berdaya Saing Global
                             </span>
                         </h1>
                         <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-300 sm:text-lg">
                             <b>Universitas Al-Khairiyah</b>  menghadirkan pendidikan tinggi berbasis riset,
-                            teknologi, dan nilai keagamaan. Terletak di pusat jantung kota Cilegon yang strategis, serta ekosistem kampus digital yang saling terintegrasi.
+                            teknologi, dan nilai keagamaan. Terletak di pusat jantung Kota Cilegon yang strategis, serta ekosistem kampus digital yang saling terintegrasi.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-3">
                             <a href="#pmb" className="btn-primary btn-lg">
@@ -59,7 +59,7 @@ export function HeroSection() {
                                 <dt className="text-slate-500 dark:text-slate-400">
                                     Akreditasi
                                 </dt>
-                                <dd className="font-display text-lg font-bold">Unggul (A)</dd>
+                                <dd className="font-display text-lg font-bold">Baik (B)</dd>
                             </div>
                             <div>
                                 <dt className="text-slate-500 dark:text-slate-400">
@@ -78,24 +78,24 @@ export function HeroSection() {
                         <div className="relative">
                             <div className="tilt-card glass rounded-4xl p-3">
                                 <Image
-                                    src="/assets/images/hero-3d.jpg"
+                                    src="/assets/images/hero.png"
                                     alt="Visual 3D gedung Universitas Al-Khairiyah"
                                     width={1280}
                                     height={1024}
                                     className="h-full w-full rounded-3xl object-cover"
                                 />
                             </div>
-                            <div className="floater glass absolute -left-3 top-10 hidden rounded-2xl px-4 py-3 sm:block">
-                                <p className="text-[11px] uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                                    Riset Aktif
-                                </p>
-                                <p className="font-display text-xl font-bold">318 Proyek</p>
-                            </div>
-                            <div className="floater floater-slow glass absolute -right-2 bottom-8 hidden rounded-2xl px-4 py-3 sm:block">
-                                <p className="text-[11px] uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                            <div className="floater glass absolute -left-5 top-10 hidden rounded-2xl px-4 py-3 sm:block">
+                                <p className="text-[11px] uppercase font-bold tracking-widest text-slate-500 dark:text-slate-400">
                                     Kampus Digital
                                 </p>
-                                <p className="font-display text-xl font-bold">SIAKAD 24/7</p>
+                                <p className="font-display text-xl font-bold">SIAKAD</p>
+                            </div>
+                            <div className="floater floater-slow glass absolute -right-15 bottom-3 hidden rounded-2xl px-4 py-3 sm:block">
+                                <p className="text-[11px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-bold">
+                                    Biaya Terjangkau
+                                </p>
+                                <p className="font-display text-xl font-bold">Beasiswa & Mandiri</p>
                             </div>
                         </div>
                     </Reveal>

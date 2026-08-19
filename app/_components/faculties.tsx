@@ -49,7 +49,7 @@ export function Faculties() {
                     <div className="mx-auto max-w-2xl text-center">
                         <span className="pill">Akademik</span>
                         <h2 className="section-title mt-4">
-                            Tujuh Fakultas, Satu Standar Keunggulan
+                            Beragam Pilihan Fakultas
                         </h2>
                         <p className="mt-3 text-slate-600 dark:text-slate-300">
                             Pilih bidang yang paling sesuai dengan tujuan karier Anda.

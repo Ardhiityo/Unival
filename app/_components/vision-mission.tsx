@@ -2,6 +2,34 @@
 
 import Reveal from "./reveal"
 
+const missions = [
+    {
+        title: "Pengabdian Masyarakat",
+        description: "Menyelenggarakan inovasi Tridharma Perguruan Tinggi dengan akses pendidikan, pengajaran, penelitian, pengabdian masyarakat yang baik dan berkualitas.",
+        delay: 0
+    },
+    {
+        title: "Pendidikan Berkualitas",
+        description: "Menyelenggarakan pendidikan yang bermutu, dinamis, beradaptasi dengan teknologi yang menghasilkan lulusan yang beriman, bertaqwa, berakhlaq mulia, dan mampu bersaing di pasar tenaga kerja secara global.",
+        delay: 80
+    },
+    {
+        title: "Riset & Inovasi",
+        description: "Menyelenggarakan penelitian dan pengabdian masyarakat yang berkontribusi kepada pengembangan ilmu pengetahuan dan teknologi.",
+        delay: 160
+    },
+    {
+        title: "Karakter & Integritas",
+        description: "Menyelenggarakan iklim akademik dengan tata pamong universitas secara adil, bertanggung jawab, transparan yang kredibel berdasarkan kebijakan pendidikan nasional.",
+        delay: 240
+    },
+    {
+        title: "Kolaborasi Global",
+        description: "Menyelenggarakan kerjasama dengan cara membangun jaringan Nasional dan Internasional dalam pengembangan ilmu pengetahuan dan teknologi yang bermanfaat bagi kesejahteraan dan kemajuan masyarakat.",
+        delay: 320
+    }
+]
+
 export function VisionMission() {
     return (
         <section id="visimisi" className="px-4 py-20 sm:py-24">
@@ -24,59 +52,20 @@ export function VisionMission() {
                         <div className="glass rounded-4xl p-8 h-full">
                             <span className="badge-num">Visi</span>
                             <p className="mt-5 font-display text-xl font-bold leading-snug sm:text-2xl">
-                                &ldquo;Menjadi universitas riset terkemuka di Asia Tenggara
-                                yang unggul dalam inovasi, berintegritas, dan berdampak bagi
-                                kemanusiaan pada tahun 2035.&rdquo;
+                                Menjadi Universitas Unggul sebagai pusat peradaban ilmu pengetahuan, teknologi dan menciptakan generasi emas mandiri, berdaya saing global, beriman, berkarakter yang berkontribusi pada kesejahteraan dan kemajuan masyarakat
                             </p>
                             <p className="mt-6 text-sm text-slate-500 dark:text-slate-400">
-                                Ditetapkan dalam Rencana Induk Pengembangan 2025–2035.
+                                Ditetapkan dalam Rencana Induk Pengembangan Universitas Al-Khairiyah.
                             </p>
                         </div>
                     </Reveal>
                     <div className="grid gap-4 lg:col-span-3 sm:grid-cols-2">
-                        {[
-                            {
-                                num: "01",
-                                title: "Pendidikan Berkualitas",
-                                desc: "Menyelenggarakan pendidikan tinggi yang adaptif, inklusif, dan relevan dengan kebutuhan zaman.",
-                                delay: 0,
-                            },
-                            {
-                                num: "02",
-                                title: "Riset &amp; Inovasi",
-                                desc: "Mengembangkan riset terapan yang menghasilkan solusi nyata bagi industri dan masyarakat.",
-                                delay: 80,
-                            },
-                            {
-                                num: "03",
-                                title: "Pengabdian Masyarakat",
-                                desc: "Memperkuat peran kampus sebagai mitra pembangunan daerah dan nasional.",
-                                delay: 160,
-                            },
-                            {
-                                num: "04",
-                                title: "Tata Kelola Digital",
-                                desc: "Membangun tata kelola transparan, akuntabel, dan terdigitalisasi penuh.",
-                                delay: 240,
-                            },
-                            {
-                                num: "05",
-                                title: "Kolaborasi Global",
-                                desc: "Memperluas kemitraan internasional untuk pertukaran mahasiswa dan riset bersama.",
-                                delay: 320,
-                            },
-                            {
-                                num: "06",
-                                title: "Karakter &amp; Integritas",
-                                desc: "Menanamkan nilai etika, kepemimpinan, dan tanggung jawab sosial pada setiap lulusan.",
-                                delay: 400,
-                            },
-                        ].map((m) => (
-                            <Reveal key={m.num} delay={m.delay}>
+                        {missions.map((mission, index) => (
+                            <Reveal key={index} delay={mission.delay}>
                                 <div className="mission-card">
-                                    <span className="badge-num">{m.num}</span>
-                                    <h3 dangerouslySetInnerHTML={{ __html: m.title }} />
-                                    <p>{m.desc}</p>
+                                    <span className="badge-num">{index + 1}</span>
+                                    <h3 >{mission.title}</h3>
+                                    <p>{mission.description}</p>
                                 </div>
                             </Reveal>
                         ))}
