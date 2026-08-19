@@ -87,15 +87,6 @@ export default function Footer() {
                                     YouTube
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    href="https://tiktok.com/@universitasnexus"
-                                    target="_blank"
-                                    rel="noopener"
-                                >
-                                    TikTok
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>

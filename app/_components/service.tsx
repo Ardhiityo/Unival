@@ -46,7 +46,7 @@ export function Service() {
                         </article>
                     </Reveal>
                     <Reveal delay={100}>
-                        <article id="pmb" className="service-card">
+                        <article id="layanan" className="service-card">
                             <span className="svc-icon">
                                 <svg
                                     viewBox="0 0 24 24"

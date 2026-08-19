@@ -58,8 +58,7 @@ export function About() {
                         <div className="info-card">
                             <p className="font-semibold">Berdiri</p>
                             <p className="text-sm text-slate-500 dark:text-slate-400">
-                                1916 Perguruan Islam <br />
-                                2020 Universitas
+                                2020
                             </p>
                         </div>
                         <div className="info-card">

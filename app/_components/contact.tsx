@@ -2,7 +2,7 @@
 
 import { FaFacebook, FaInstagram } from "react-icons/fa6"
 import Reveal from "./reveal"
-import { FaTiktok, FaYoutube } from "react-icons/fa"
+import { FaYoutube } from "react-icons/fa"
 
 export default function Contact() {
     return (
@@ -86,7 +86,7 @@ export default function Contact() {
                                 <div className="flex flex-wrap gap-3">
                                     <a
                                         className="social flex gap-1 items-center"
-                                        href="https://instagram.com/universitasnexus"
+                                        href="https://www.instagram.com/humas_unival"
                                         target="_blank"
                                         rel="noopener"
                                     >
@@ -95,7 +95,7 @@ export default function Contact() {
                                     </a>
                                     <a
                                         className="social flex items-center gap-1"
-                                        href="https://facebook.com/universitasnexus"
+                                        href="https://www.facebook.com/share/1CGXwtSxKG/"
                                         target="_blank"
                                         rel="noopener"
                                     >
@@ -104,21 +104,12 @@ export default function Contact() {
                                     </a>
                                     <a
                                         className="social flex items-center gap-1"
-                                        href="https://youtube.com/@universitasnexus"
+                                        href="https://www.youtube.com/@al-khairiyahtv432"
                                         target="_blank"
                                         rel="noopener"
                                     >
                                         <FaYoutube />
                                         YouTube
-                                    </a>
-                                    <a
-                                        className="social flex items-center gap-1"
-                                        href="https://tiktok.com/@universitasnexus"
-                                        target="_blank"
-                                        rel="noopener"
-                                    >
-                                        <FaTiktok />
-                                        TikTok
                                     </a>
                                 </div>
                             </div>
@@ -131,7 +122,7 @@ export default function Contact() {
                                 className="h-105 w-full rounded-3xl border-0"
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=106.75%2C-6.32%2C106.90%2C-6.20&amp;layer=mapnik"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.8390762881586!2d106.03968747476215!3d-6.016819993968526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418e153492ffff%3A0xaabad81c1107ac4a!2sUNIVERSITAS%20AL-KHAIRIYAH!5e0!3m2!1sid!2sid!4v1787132893189!5m2!1sid!2sid"
                             ></iframe>
                         </div>
                     </Reveal>
