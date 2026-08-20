@@ -47,13 +47,16 @@ export default function Footer() {
                         <h4 className="footer-title">Kontak</h4>
                         <ul className="footer-list">
                             <li>
-                                <a href="tel:+622150998877">+62 21 5099 8877</a>
+                                <a href="tel:+622150998877"> (0254) 7877057</a>
                             </li>
                             <li>
-                                <a href="mailto:info@nexus.ac.id">info@nexus.ac.id</a>
+                                <a href="mailto:alkhairiyah.university@gmail.com">
+                                    alkhairiyah.university@gmail.com</a>
                             </li>
                             <li>
-                                <span>Jl. Cendekia Raya No. 88, Kota Nusantara</span>
+                                <span>
+                                    Jl. Kh.Enggus Arja No.1, Citangkil, Kec. Citangkil, Kota Cilegon, Banten 42441
+                                </span>
                             </li>
                         </ul>
                     </div>

@@ -4,7 +4,6 @@ import useCounter from "../hooks/useCounter";
 
 export default function Counter({
     target,
-    suffix = "",
     start,
 }: {
     target: number;
@@ -15,7 +14,6 @@ export default function Counter({
     return (
         <span className="font-display text-4xl font-extrabold text-brand dark:text-brand-200 sm:text-5xl">
             {value.toLocaleString("id-ID")}
-            {suffix}
         </span>
     );
 }

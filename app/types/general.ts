@@ -17,3 +17,9 @@ export type ServiceItem = {
     description: string,
     url: string,
 };
+
+export type StatisticItem = {
+    title: string,
+    description: string,
+    total: number,
+};
