@@ -4,10 +4,25 @@ import { useEffect, useRef, useState } from "react";
 import Reveal from "./reveal"
 import StatSection from "./stat-section"
 import Image from "next/image";
+import { environment } from "../config/environment";
+import { HeroSectionItem } from "../types/general";
 
 export function HeroSection() {
     const [countersStart, setCountersStart] = useState(false);
     const statsRef = useRef<HTMLDivElement>(null);
+    const baseUrl = environment.API_URL;
+    const [heroSection, setHeroSection] = useState<HeroSectionItem | null>(null)
+
+    useEffect(() => {
+        async function fetchHeroSections() {
+            const response = await fetch(`${baseUrl}/hero-sections`);
+            if (response.ok) {
+                const result = await response.json();
+                setHeroSection(result.data[0]);
+            }
+        }
+        fetchHeroSections();
+    }, [baseUrl])
 
     useEffect(() => {
         const el = statsRef.current;
@@ -59,17 +74,17 @@ export function HeroSection() {
                                 <dt className="text-slate-500 dark:text-slate-400">
                                     Akreditasi
                                 </dt>
-                                <dd className="font-display text-lg font-bold">Baik (B)</dd>
+                                <dd className="font-display text-lg font-bold">{heroSection?.accreditation}</dd>
                             </div>
                             <div>
                                 <dt className="text-slate-500 dark:text-slate-400">
                                     Mitra Industri
                                 </dt>
-                                <dd className="font-display text-lg font-bold">120+</dd>
+                                <dd className="font-display text-lg font-bold">{heroSection?.total_industry_partner}+</dd>
                             </div>
                             <div>
                                 <dt className="text-slate-500 dark:text-slate-400">Alumni</dt>
-                                <dd className="font-display text-lg font-bold">64.000+</dd>
+                                <dd className="font-display text-lg font-bold">{heroSection?.total_number_of_graduate}+</dd>
                             </div>
                         </dl>
                     </Reveal>

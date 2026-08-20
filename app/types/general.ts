@@ -1,3 +1,9 @@
+export type HeroSectionItem = {
+    accreditation: string,
+    total_industry_partner: number,
+    total_number_of_graduate: number,
+};
+
 export type NewsItem = {
     image_url: string,
     title: string,

@@ -14,9 +14,11 @@ export function Service() {
     useEffect(() => {
         async function fetchServices() {
             const response = await fetch(`${baseUrl}/services`);
-            const result = await response.json();
-            setServices(result.data);
-            setNextUrl(result.links.next);
+            if (response.ok) {
+                const result = await response.json();
+                setServices(result.data);
+                setNextUrl(result.links.next);
+            }
         }
         fetchServices();
     }, [baseUrl])

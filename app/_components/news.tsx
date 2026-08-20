@@ -14,16 +14,16 @@ export function News() {
 
     const baseUrl = environment.API_URL;
     const [news, setNews] = useState<NewsItem[]>([]);
-    const [nextUrl, setNextUrl] = useState<string | null>(
-        `${baseUrl}/news`
-    );
+    const [nextUrl, setNextUrl] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchNews = async () => {
             const response = await fetch(`${baseUrl}/news`);
-            const result = await response.json();
-            setNews(result.data);
-            setNextUrl(result.links.next);
+            if (response.ok) {
+                const result = await response.json();
+                setNews(result.data);
+                setNextUrl(result.links.next);
+            }
         };
 
         fetchNews();

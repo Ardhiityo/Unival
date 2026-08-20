@@ -9,15 +9,17 @@ import { environment } from "../config/environment";
 export function Faculties() {
     const baseUrl = environment.API_URL;
     const [faculties, setFaculties] = useState<FacultyItem[]>([]);
-    const [nextUrl, setNextUrl] = useState<string | null>(`${baseUrl}/faculties`);
+    const [nextUrl, setNextUrl] = useState<string | null>(null);
     const [isPending, setIsPending] = useState(false);
 
     useEffect(() => {
         async function fetchFaculties() {
             const response = await fetch(`${baseUrl}/faculties`);
-            const result = await response.json();
-            setFaculties(result.data);
-            setNextUrl(result.links.next);
+            if (response.ok) {
+                const result = await response.json();
+                setFaculties(result.data);
+                setNextUrl(result.links.next);
+            }
         }
         fetchFaculties();
     }, [baseUrl])
