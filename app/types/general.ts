@@ -1,8 +1,13 @@
-type newsData = {
+export type NewsItem = {
     image_url: string,
     title: string,
     date: string,
     description: string,
 };
 
-export type NewsItem = (newsData);
+export type FacultyItem = {
+    title: string,
+    image_url: string,
+    description: string,
+    detail_url: string,
+};

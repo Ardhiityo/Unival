@@ -14,6 +14,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/news/**",
       },
+      {
+        protocol: "http",
+        hostname: "backend-unival.test",
+        port: "",
+        pathname: "/faculties/**",
+      },
     ],
   }
 };
