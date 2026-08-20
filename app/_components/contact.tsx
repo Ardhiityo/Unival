@@ -32,8 +32,8 @@ export default function Contact() {
                                     </span>
                                     <div>
                                         <p className="font-semibold">Telepon</p>
-                                        <a href="tel:+622150998877" className="link">
-                                            +62 21 5099 8877
+                                        <a href="tel:+02547877057" className="link">
+                                            (0254) 7877057
                                         </a>
                                     </div>
                                 </li>
@@ -52,8 +52,8 @@ export default function Contact() {
                                     </span>
                                     <div>
                                         <p className="font-semibold">Email</p>
-                                        <a href="mailto:info@nexus.ac.id" className="link">
-                                            info@nexus.ac.id
+                                        <a href="mailto:alkhairiyah.university@gmail.com" className="link">
+                                            alkhairiyah.university@gmail.com
                                         </a>
                                     </div>
                                 </li>
@@ -73,8 +73,7 @@ export default function Contact() {
                                     <div>
                                         <p className="font-semibold">Alamat</p>
                                         <p className="text-slate-600 dark:text-slate-300">
-                                            Jl. Cendekia Raya No. 88, Kota Nusantara, Indonesia
-                                            16820
+                                            Jl. Kh.Enggus Arja No.1, Citangkil, Kec. Citangkil, Kota Cilegon, Banten 42441
                                         </p>
                                     </div>
                                 </li>

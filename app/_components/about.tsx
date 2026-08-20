@@ -10,7 +10,7 @@ export function About() {
                 <Reveal>
                     <div className="tilt-card glass rounded-4xl p-3 ">
                         <Image
-                            src="/assets/images/syamun.png"
+                            src="/assets/images/syamun.webp"
                             alt="Suasana kampus Universitas Al-Khairiyah"
                             width={1280}
                             height={896}
@@ -29,7 +29,7 @@ export function About() {
                             className="w-full rounded-3xl"
                             controls
                             preload="none"
-                            poster="/assets/images/thumbnail.png"
+                            poster="/assets/images/thumbnail.webp"
                         >
                             <source
                                 src="/unival.mp4"
