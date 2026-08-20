@@ -11,3 +11,9 @@ export type FacultyItem = {
     description: string,
     detail_url: string,
 };
+
+export type ServiceItem = {
+    title: string,
+    description: string,
+    url: string,
+};

@@ -22,7 +22,6 @@ export function News() {
         const fetchNews = async () => {
             const response = await fetch(`${baseUrl}/news`);
             const result = await response.json();
-
             setNews(result.data);
             setNextUrl(result.links.next);
         };
@@ -103,9 +102,7 @@ export function News() {
                         <div className="mt-10 text-center">
                             <button
                                 disabled={!nextUrl || isPending}
-                                onClick={() => {
-                                    loadMore()
-                                }}
+                                onClick={() => loadMore()}
                                 type="button"
                                 className="btn-primary btn-lg disabled:opacity-35"
                             >

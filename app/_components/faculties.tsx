@@ -13,13 +13,13 @@ export function Faculties() {
     const [isPending, setIsPending] = useState(false);
 
     useEffect(() => {
-        async function load() {
+        async function fetchFaculties() {
             const response = await fetch(`${baseUrl}/faculties`);
             const result = await response.json();
             setFaculties(result.data);
             setNextUrl(result.links.next);
         }
-        load();
+        fetchFaculties();
     }, [baseUrl])
 
     async function loadMore() {

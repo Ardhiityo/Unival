@@ -5,10 +5,10 @@ import Reveal from "./reveal"
 
 export function About() {
     return (
-        <section id="tentang" className="px-4 py-20 sm:py-28">
+        <section id="tentang" className="px-4 py-20 sm:py-28 relative">
             <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
                 <Reveal>
-                    <div className="tilt-card glass rounded-4xl p-3 relative">
+                    <div className="tilt-card glass rounded-4xl p-3 ">
                         <Image
                             src="/assets/images/syamun.png"
                             alt="Suasana kampus Universitas Al-Khairiyah"
@@ -17,7 +17,7 @@ export function About() {
                             loading="lazy"
                             className="w-full rounded-3xl object-cover"
                         />
-                        <div className="floater floater-slow glass absolute -left-15 bottom-3 hidden rounded-2xl px-4 py-3 sm:block">
+                        <div className="floater floater-slow glass absolute -lef-15 bottom-3 hidden rounded-2xl px-4 py-3 sm:block">
                             <p className="text-[10px] uppercase tracking-widest text-slate-700 dark:text-slate-400 font-bold">
                                 Pendiri Al-Khairiyah
                             </p>
