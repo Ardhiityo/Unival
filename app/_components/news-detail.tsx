@@ -66,11 +66,11 @@ export default function NewsDetail({
                         {news.date}
                     </p>
                     <h2 className="section-title mt-3">{news.title}</h2>
-                    <p className="mt-5 font-semibold text-slate-700 dark:text-slate-300 leading-relaxed"
+                    <article className="mt-5 font-semibold article-responsive text-slate-700 dark:text-slate-300 leading-relaxed"
                         dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(news.description),
                         }}>
-                    </p>
+                    </article>
                     <div className="mt-8 flex flex-wrap gap-3">
                         <button onClick={onClose} className="btn-ghost">
                             ← Kembali ke Berita

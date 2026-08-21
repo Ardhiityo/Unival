@@ -28,6 +28,12 @@
   --glass-shadow: 0 24px 60px -24px rgba(11, 16, 48, 0.35);
 }
 
+@utility article-responsive {
+  p {
+    @apply mb-3;
+  }
+}
+
 .dark {
   --glass-bg: rgba(20, 24, 62, 0.55);
   --glass-border: rgba(255, 255, 255, 0.12);

@@ -85,11 +85,11 @@ export function News() {
                                         <h3 className="mt-2 font-display text-lg font-bold leading-snug">
                                             {news.title}
                                         </h3>
-                                        <p
-                                            className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300" dangerouslySetInnerHTML={{
+                                        <article
+                                            className="mt-2 text-sm leading-relaxed h-28 truncate text-wrap text-slate-600 article-responsive dark:text-slate-300" dangerouslySetInnerHTML={{
                                                 __html: DOMPurify.sanitize(news.description),
                                             }}>
-                                        </p>
+                                        </article>
                                         <span className="btn-ghost mt-5">
                                             Baca Selengkapnya
                                         </span>
