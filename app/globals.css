@@ -707,10 +707,8 @@ body {
     transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.contact-row {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
+@utility contact-row {
+  @apply flex flex-col gap-1;
 }
 
 .social {
