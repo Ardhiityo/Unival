@@ -10,15 +10,15 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "http",
-        hostname: "backend-unival.test",
+        hostname: "https://panel.unival-cilegon.ac.id",
         port: "",
-        pathname: "/news/**",
+        pathname: "/api/news/**",
       },
       {
         protocol: "http",
-        hostname: "backend-unival.test",
+        hostname: "https://panel.unival-cilegon.ac.id/api",
         port: "",
-        pathname: "/faculties/**",
+        pathname: "/api/faculties/**",
       },
     ],
   }
