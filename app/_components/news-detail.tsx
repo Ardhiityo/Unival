@@ -50,7 +50,7 @@ export default function NewsDetail({
                 {/* Hero image */}
                 <div className="news-detail-img-wrap">
                     <Image
-                        src={news.image_url}
+                        src={news.image_url ?? '/unival.webp'}
                         alt={news.title}
                         width={1200}
                         height={600}

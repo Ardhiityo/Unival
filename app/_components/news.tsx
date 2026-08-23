@@ -67,7 +67,7 @@ export function News() {
                                 >
                                     <div className="overflow-hidden">
                                         <Image
-                                            src={news.image_url}
+                                            src={news.image_url ?? '/unival.webp'}
                                             alt={news.title}
                                             loading="lazy"
                                             width={1024}

@@ -5,7 +5,7 @@ export type HeroSectionItem = {
 };
 
 export type NewsItem = {
-    image_url: string,
+    image_url: string | null,
     title: string,
     date: string,
     description: string,
