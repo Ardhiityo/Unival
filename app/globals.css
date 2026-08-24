@@ -628,8 +628,8 @@ body {
   color: #b8c0d6;
 }
 
-@utility contact-icon {
-  @apply dark:text-brand-200 size-10 flex items-center justify-center;
+@utility icon {
+  @apply size-10 flex items-center justify-center;
   @apply rounded-2xl border text-(--brand);
   @apply border-(--glass-border);
   @apply shadow-[inset_0_1px_0_rgba(255,255,255,0.5)];

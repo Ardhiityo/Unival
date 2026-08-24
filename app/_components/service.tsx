@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Reveal from "./reveal"
 import { ServiceItem } from "../types/general"
 import { environment } from "../config/environment"
+import { GrSystem } from "react-icons/gr"
 
 export function Service() {
     const baseUrl = environment.API_URL;
@@ -27,11 +28,12 @@ export function Service() {
         if (!nextUrl) return;
         setIsPending(true);
         const response = await fetch(nextUrl);
-        const result = await response.json();
-
-        setServices((prev) => [...prev, ...result.data]);
-        setNextUrl(result.links.next);
-        setIsPending(false);
+        if (response.ok) {
+            const result = await response.json();
+            setServices((prev) => [...prev, ...result.data]);
+            setNextUrl(result.links.next);
+            setIsPending(false);
+        }
     };
 
     return (
@@ -49,18 +51,8 @@ export function Service() {
                     {services.map((service, index) => (
                         <Reveal key={`${service.title}-${index}`}>
                             <article className="service-card">
-                                <span className="svc-icon">
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="1.7"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M22 10 12 5 2 10l10 5 10-5z" />
-                                        <path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" />
-                                    </svg>
+                                <span className="icon">
+                                    <GrSystem className="dark:text-brand-200" />
                                 </span>
                                 <h3>{service.title}</h3>
                                 <p>
@@ -70,7 +62,7 @@ export function Service() {
                                     href={service.url}
                                     target="_blank"
                                     rel="noopener"
-                                    className="btn-ghost mt-5"
+                                    className="btn-primary mt-5"
                                 >
                                     Kunjungi
                                 </a>

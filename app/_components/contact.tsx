@@ -21,8 +21,8 @@ export default function Contact() {
                         <div className="glass rounded-4xl p-8">
                             <ul className="space-y-6">
                                 <li className="flex flex-col gap-3 md:flex-row">
-                                    <div className="contact-icon">
-                                        <BsTelephone />
+                                    <div className="icon">
+                                        <BsTelephone className="dark:text-brand-200" />
                                     </div>
                                     <div>
                                         <p className="font-semibold"> Telepon</p>
@@ -32,8 +32,8 @@ export default function Contact() {
                                     </div>
                                 </li>
                                 <li className="flex flex-col gap-3 md:flex-row">
-                                    <div className="contact-icon">
-                                        <IoMailOutline />
+                                    <div className="icon">
+                                        <IoMailOutline className="dark:text-brand-200" />
                                     </div>
                                     <div>
                                         <p className="font-semibold">Email</p>
@@ -43,8 +43,8 @@ export default function Contact() {
                                     </div>
                                 </li>
                                 <li className="flex flex-col gap-3 md:flex-row">
-                                    <div className="contact-icon">
-                                        <IoLocationOutline />
+                                    <div className="icon">
+                                        <IoLocationOutline className="dark:text-brand-200" />
                                     </div>
                                     <div>
                                         <p className="font-semibold">Alamat</p>

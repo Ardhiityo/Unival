@@ -98,7 +98,7 @@ export default function Footer() {
                         © {currentYear}. Seluruh hak cipta dilindungi.
                     </p>
                     <Link href="https://linkedin.com/in/ardhiityo" target="_blank" className="text-slate-500 dark:text-slate-400">
-                        Developed By <span className="text-slate-700 dark:text-slate-300">Arya Adhi Prasetyo</span>
+                        Developed By <span className="text-slate-600 dark:text-brand-200">Arya Adhi Prasetyo</span>
                     </Link>
                 </div>
             </div>

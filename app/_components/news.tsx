@@ -91,7 +91,7 @@ export function News() {
                                                 __html: DOMPurify.sanitize(news.description),
                                             }}>
                                         </article>
-                                        <span className="btn-ghost mt-3">
+                                        <span className="btn-primary mt-3">
                                             Baca Selengkapnya
                                         </span>
                                     </div>

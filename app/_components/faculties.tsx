@@ -72,7 +72,7 @@ export function Faculties() {
                                     <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                                         {faculty.description}
                                     </p>
-                                    <a href={faculty.detail_url} target="_blank" className="btn-ghost mt-5">
+                                    <a href={faculty.detail_url} target="_blank" className="btn-primary mt-5">
                                         Lihat Selengkapnya
                                     </a>
                                 </div>
