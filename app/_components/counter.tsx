@@ -13,7 +13,7 @@ export default function Counter({
     const value = useCounter(target, start);
     return (
         <span className="font-display text-4xl font-extrabold text-brand dark:text-brand-200 sm:text-5xl">
-            {value.toLocaleString("id-ID")}
+            {value.toLocaleString("id-ID")}+
         </span>
     );
 }

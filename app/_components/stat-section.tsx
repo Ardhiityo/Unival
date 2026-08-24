@@ -5,6 +5,7 @@ import { environment } from "../config/environment";
 import Counter from "./counter";
 import Reveal from "./reveal";
 import { StatisticItem } from "../types/general";
+import { parseNumber } from "../helper";
 
 export default function StatSection({ countersStart }: { countersStart: boolean }) {
     const baseUrl = environment.API_URL;
@@ -28,7 +29,7 @@ export default function StatSection({ countersStart }: { countersStart: boolean 
                     <div className="grid gap-6 sm:grid-cols-3" >
                         {statistics.map((statistic, index) => (
                             <div className="stat-card text-center" key={`${statistic.title}-${index}`}>
-                                <Counter target={statistic.total} start={countersStart} />
+                                <Counter target={parseNumber(statistic.total)} start={countersStart} />
                                 <p className="mt-2 font-semibold">{statistic.title}</p>
                                 <p className="text-sm text-slate-500 dark:text-slate-400">
                                     {statistic.description}
