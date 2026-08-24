@@ -50,10 +50,10 @@ export function Faculties() {
                         </p>
                     </div>
                 </Reveal>
-                <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-12 mx-auto grid items-stretch gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                     {faculties?.map((faculty, index) => (
-                        <Reveal key={`${faculty.title}-${index}`} delay={(index % 3) * 90}>
-                            <article className="faculty-card">
+                        <article className="faculty-card" key={`${faculty.title}-${index}`}>
+                            <Reveal delay={(index % 3) * 90}>
                                 <div className="overflow-hidden">
                                     <Image
                                         src={faculty.image_url}
@@ -76,8 +76,8 @@ export function Faculties() {
                                         Lihat Selengkapnya
                                     </a>
                                 </div>
-                            </article>
-                        </Reveal>
+                            </Reveal>
+                        </article>
                     ))}
                 </div>
                 {faculties.length > 0 && nextUrl && (

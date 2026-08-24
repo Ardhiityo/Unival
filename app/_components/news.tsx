@@ -33,8 +33,8 @@ export function News() {
         if (!nextUrl) return;
         setIsPending(true);
         const response = await fetch(nextUrl);
+        const result = await response.json();
         if (response.ok) {
-            const result = await response.json();
             setNews((prev) => [...prev, ...result.data]);
             setNextUrl(result.links.next);
             setIsPending(false);
@@ -53,9 +53,9 @@ export function News() {
                             </h2>
                         </div>
                     </Reveal>
-                    <div className="mt-12 place-items-center grid items-stretch gap-8 lg:grid-cols-3 md:grid-cols-2 mx-auto grid-cols-1">
+                    <div className="mt-12 place-items-center grid items-stretch gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                         {news.slice(0, news.length).map((news: NewsItem, i: number) => (
-                            <Reveal key={news.title} delay={(i % 3) * 80}>
+                            <Reveal key={`${news.title}-${i}`} delay={(i % 3) * 80}>
                                 <article
                                     className="news-card flex gap-4 flex-col cursor-pointer w-87.5 h-full"
                                     onClick={() => setSelectedNews(news)}
@@ -91,7 +91,7 @@ export function News() {
                                                 __html: DOMPurify.sanitize(news.description),
                                             }}>
                                         </article>
-                                        <span className="btn-primary mt-3">
+                                        <span className="btn-primary my-3">
                                             Baca Selengkapnya
                                         </span>
                                     </div>

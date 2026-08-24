@@ -47,41 +47,45 @@ export function Service() {
                         </h2>
                     </div>
                 </Reveal>
-                <div className="mt-12 grid gap-6 md:grid-cols-3">
+                <div className="mt-12 mx-auto grid items-stretch gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                     {services.map((service, index) => (
-                        <Reveal key={`${service.title}-${index}`}>
-                            <article className="service-card">
-                                <span className="icon">
-                                    <GrSystem className="dark:text-brand-200" />
-                                </span>
-                                <h3>{service.title}</h3>
-                                <p>
-                                    {service.description}
-                                </p>
+                        <article key={`${service.title}-${index}`} className="service-card flex flex-col justify-between">
+                            <Reveal>
+                                <div>
+                                    <span className="icon">
+                                        <GrSystem className="dark:text-brand-200" />
+                                    </span>
+                                    <h3>{service.title}</h3>
+                                    <p>
+                                        {service.description}
+                                    </p>
+                                </div>
                                 <a
                                     href={service.url}
                                     target="_blank"
                                     rel="noopener"
-                                    className="btn-primary mt-5"
+                                    className="btn-primary my-5 w-fit"
                                 >
                                     Kunjungi
                                 </a>
-                            </article>
-                        </Reveal>
+                            </Reveal>
+                        </article>
                     ))}
                 </div>
-                {services.length > 0 && nextUrl && (
-                    <div className="mt-10 text-center">
-                        <button
-                            disabled={!nextUrl || isPending}
-                            onClick={() => loadMore()}
-                            type="button"
-                            className="btn-primary btn-lg disabled:opacity-35"
-                        >
-                            Load More
-                        </button>
-                    </div>
-                )}
+                {
+                    services.length > 0 && nextUrl && (
+                        <div className="mt-10 text-center">
+                            <button
+                                disabled={!nextUrl || isPending}
+                                onClick={() => loadMore()}
+                                type="button"
+                                className="btn-primary btn-lg disabled:opacity-35"
+                            >
+                                Load More
+                            </button>
+                        </div>
+                    )
+                }
             </div>
         </section>
     )
