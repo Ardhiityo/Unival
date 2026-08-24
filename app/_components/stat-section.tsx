@@ -13,8 +13,10 @@ export default function StatSection({ countersStart }: { countersStart: boolean 
     useEffect(() => {
         async function fetchStatistics() {
             const response = await fetch(`${baseUrl}/statistics`)
-            const result = await response.json();
-            setStatistics(result.data);
+            if (response.ok) {
+                const result = await response.json();
+                setStatistics(result.data);
+            }
         }
         fetchStatistics();
     }, [baseUrl])

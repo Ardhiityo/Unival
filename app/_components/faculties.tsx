@@ -28,10 +28,12 @@ export function Faculties() {
         if (!nextUrl) return;
         setIsPending(true);
         const response = await fetch(nextUrl);
-        const result = await response.json();
-        setFaculties(prev => [...prev, ...result.data]);
-        setNextUrl(result.links.next);
-        setIsPending(false);
+        if (response.ok) {
+            const result = await response.json();
+            setFaculties(prev => [...prev, ...result.data]);
+            setNextUrl(result.links.next);
+            setIsPending(false);
+        }
     }
 
     return (

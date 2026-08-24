@@ -33,11 +33,12 @@ export function News() {
         if (!nextUrl) return;
         setIsPending(true);
         const response = await fetch(nextUrl);
-        const result = await response.json();
-
-        setNews((prev) => [...prev, ...result.data]);
-        setNextUrl(result.links.next);
-        setIsPending(false);
+        if (response.ok) {
+            const result = await response.json();
+            setNews((prev) => [...prev, ...result.data]);
+            setNextUrl(result.links.next);
+            setIsPending(false);
+        }
     };
 
     return (
@@ -52,11 +53,11 @@ export function News() {
                             </h2>
                         </div>
                     </Reveal>
-                    <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="mt-12 place-items-center grid items-stretch gap-8 lg:grid-cols-3 md:grid-cols-2 mx-auto grid-cols-1">
                         {news.slice(0, news.length).map((news: NewsItem, i: number) => (
                             <Reveal key={news.title} delay={(i % 3) * 80}>
                                 <article
-                                    className="news-card cursor-pointer"
+                                    className="news-card flex gap-4 flex-col cursor-pointer w-87.5 h-full"
                                     onClick={() => setSelectedNews(news)}
                                     tabIndex={0}
                                     role="button"
@@ -82,15 +83,15 @@ export function News() {
                                                 {news.date}
                                             </p>
                                         </div>
-                                        <h3 className="mt-2 font-display text-lg font-bold leading-snug">
+                                        <h3 className="mt-2 font-display text-lg font-bold leading-snug line-clamp-2">
                                             {news.title}
                                         </h3>
                                         <article
-                                            className="mt-2 text-sm leading-relaxed h-28 truncate text-wrap text-slate-600 article-responsive dark:text-slate-300" dangerouslySetInnerHTML={{
+                                            className="mt-2 text-sm line-clamp-3 text-slate-600 article-responsive dark:text-slate-300" dangerouslySetInnerHTML={{
                                                 __html: DOMPurify.sanitize(news.description),
                                             }}>
                                         </article>
-                                        <span className="btn-ghost mt-5">
+                                        <span className="btn-ghost mt-3">
                                             Baca Selengkapnya
                                         </span>
                                     </div>
