@@ -3,13 +3,12 @@
 import { useEffect, useState } from "react";
 import Reveal from "./reveal";
 import { NewsItem } from "../types/general";
-import NewsDetail from "./news-detail";
 import Image from "next/image";
+import Link from "next/link";
 import { environment } from "../config/environment";
 import DOMPurify from "dompurify";
 
 export function News() {
-    const [selectedNews, setSelectedNews] = useState<(NewsItem) | null>(null);
     const [isPending, setIsPending] = useState(false);
 
     const baseUrl = environment.API_URL;
@@ -58,13 +57,6 @@ export function News() {
                             <Reveal key={`${news.title}-${i}`} delay={(i % 3) * 80}>
                                 <article
                                     className="news-card flex gap-4 flex-col cursor-pointer w-87.5 h-full"
-                                    onClick={() => setSelectedNews(news)}
-                                    tabIndex={0}
-                                    role="button"
-                                    aria-label={`Baca berita: ${news.title}`}
-                                    onKeyDown={(e) => {
-                                        if (e.key === "Enter" || e.key === " ") setSelectedNews(news);
-                                    }}
                                 >
                                     <div className="overflow-hidden">
                                         <Image
@@ -77,12 +69,10 @@ export function News() {
                                             className="h-48 w-full object-cover"
                                         />
                                     </div>
-                                    <div className="p-6">
-                                        <div>
-                                            <p className="text-xs font-semibold uppercase tracking-widest text-brand dark:text-brand-200 ">
-                                                {news.date}
-                                            </p>
-                                        </div>
+                                    <div className="p-5">
+                                        <p className="text-xs font-semibold uppercase tracking-widest text-brand dark:text-brand-200 ">
+                                            {news.date}
+                                        </p>
                                         <h3 className="mt-2 font-display text-lg font-bold leading-snug line-clamp-2">
                                             {news.title}
                                         </h3>
@@ -91,9 +81,9 @@ export function News() {
                                                 __html: DOMPurify.sanitize(news.description),
                                             }}>
                                         </article>
-                                        <span className="btn-primary my-3">
+                                        <Link href={`/news/${news.slug}`} className="btn-primary mt-5 mb-3">
                                             Baca Selengkapnya
-                                        </span>
+                                        </Link>
                                     </div>
                                 </article>
                             </Reveal>
@@ -113,9 +103,6 @@ export function News() {
                     )}
                 </div>
             </section>
-            {selectedNews && (
-                <NewsDetail news={selectedNews} onClose={() => setSelectedNews(null)} />
-            )}
         </>
     )
 }

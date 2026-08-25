@@ -27,19 +27,19 @@ export default function Footer() {
                         <h4 className="footer-title">Navigasi</h4>
                         <ul className="footer-list">
                             <li>
-                                <a href="#home">Home</a>
+                                <Link href="/#home">Home</Link>
                             </li>
                             <li>
-                                <a href="#tentang">Tentang</a>
+                                <Link href="/#tentang">Tentang</Link>
                             </li>
                             <li>
-                                <a href="#visimisi">Visi &amp; Misi</a>
+                                <Link href="/#visimisi">Visi &amp; Misi</Link>
                             </li>
                             <li>
-                                <a href="#fakultas">Fakultas</a>
+                                <Link href="/#fakultas">Fakultas</Link>
                             </li>
                             <li>
-                                <a href="#berita">Berita</a>
+                                <Link href="/#berita">Berita</Link>
                             </li>
                         </ul>
                     </div>

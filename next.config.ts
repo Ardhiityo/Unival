@@ -9,16 +9,14 @@ const nextConfig: NextConfig = {
         hostname: "linkedin.com",
       },
       {
-        protocol: "http",
-        hostname: "https://panel.unival-cilegon.ac.id",
-        port: "",
-        pathname: "/api/news/**",
+        protocol: "https",
+        hostname: "panel.unival-cilegon.ac.id",
+        pathname: "/storage/faculties/**",
       },
       {
         protocol: "http",
-        hostname: "https://panel.unival-cilegon.ac.id/api",
-        port: "",
-        pathname: "/api/faculties/**",
+        hostname: "backend-unival.test",
+        pathname: "/storage/**",
       },
     ],
   }

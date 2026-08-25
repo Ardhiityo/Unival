@@ -61,7 +61,6 @@ export function Faculties() {
                                         loading="lazy"
                                         width={1024}
                                         height={640}
-                                        unoptimized
                                         className="h-44 w-full object-cover"
                                     />
                                 </div>
@@ -72,7 +71,7 @@ export function Faculties() {
                                     <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                                         {faculty.description}
                                     </p>
-                                    <a href={faculty.detail_url} target="_blank" className="btn-primary mt-5">
+                                    <a href={faculty.detail_url} target="_blank" className="btn-primary mt-5 mb-3">
                                         Lihat Selengkapnya
                                     </a>
                                 </div>

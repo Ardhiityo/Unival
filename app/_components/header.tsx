@@ -1,16 +1,17 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#tentang", label: "Tentang" },
-    { href: "#visimisi", label: "Visi & Misi" },
-    { href: "#fakultas", label: "Fakultas" },
-    { href: "#layanan", label: "Layanan" },
-    { href: "#berita", label: "Berita" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#home", label: "Home" },
+    { href: "/#tentang", label: "Tentang" },
+    { href: "/#visimisi", label: "Visi & Misi" },
+    { href: "/#fakultas", label: "Fakultas" },
+    { href: "/#layanan", label: "Layanan" },
+    { href: "/#berita", label: "Berita" },
+    { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -74,7 +75,7 @@ export default function Header() {
             className={`fixed left-1/2 top-3 z-50 -translate-x-1/2 transition-all duration-500 ${shrink ? "shrink" : ""}`}
         >
             <nav className="island flex items-center justify-center gap-3 rounded-full px-3 py-2 sm:px-4 w-[calc(100vw-1.5rem)] sm:w-[calc(100vw-2rem)] max-w-6xl">
-                <a
+                <Link
                     href="#home"
                     className="flex shrink-0 items-center gap-2 pl-1 pr-2"
                 >
@@ -89,17 +90,17 @@ export default function Header() {
                             Kampus Peradaban Islam
                         </span>
                     </span>
-                </a>
+                </Link>
 
                 <ul className="mx-auto hidden items-center gap-1 lg:flex">
                     {navItems.map((item) => (
                         <li key={item.href}>
-                            <a
+                            <Link
                                 className={`nav-link text-nowrap ${activeSection === item.href ? "active" : ""}`}
                                 href={item.href}
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -134,9 +135,9 @@ export default function Header() {
                             <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
                         </svg>
                     </button>
-                    <a href="#pmb" className="btn-primary hidden sm:inline-flex text-nowrap">
+                    <Link href="/#pmb" className="btn-primary hidden sm:inline-flex text-nowrap">
                         Daftar
-                    </a>
+                    </Link>
                     <div className="lg:hidden">
                         <button
                             onClick={() => setMenuOpen(!menuOpen)}

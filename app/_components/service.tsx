@@ -64,7 +64,7 @@ export function Service() {
                                     href={service.url}
                                     target="_blank"
                                     rel="noopener"
-                                    className="btn-primary my-5 w-fit"
+                                    className="btn-primary mt-5 mb-3 w-fit"
                                 >
                                     Kunjungi
                                 </a>

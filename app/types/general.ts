@@ -8,6 +8,7 @@ export type NewsItem = {
     image_url: string | null,
     title: string,
     date: string,
+    slug: string,
     description: string,
 };
 
