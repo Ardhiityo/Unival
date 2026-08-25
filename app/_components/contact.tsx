@@ -48,7 +48,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <p className="font-semibold">Alamat</p>
-                                        <p className="text-slate-600 text-wrap break-all dark:text-slate-300">
+                                        <p className="text-slate-600 text-wrap dark:text-slate-300">
                                             Jl. Kh.Enggus Arja No.1, Kec. Citangkil, Kota Cilegon
                                         </p>
                                     </div>

@@ -55,7 +55,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <span>
-                                    Jl. Kh.Enggus Arja No.1, Citangkil, Kec. Citangkil, Kota Cilegon, Banten 42441
+                                    Jl. Kh.Enggus Arja No.1, Kec. Citangkil, Kota Cilegon
                                 </span>
                             </li>
                         </ul>
