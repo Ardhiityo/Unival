@@ -18,7 +18,7 @@ export default function Header() {
     const [isDark, setIsDark] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [shrink, setShrink] = useState(false);
-    const [activeSection, setActiveSection] = useState("#home");
+    const [activeSection, setActiveSection] = useState("");
 
     const toggleTheme = () => {
         const html = document.documentElement;
@@ -59,7 +59,7 @@ export default function Header() {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        setActiveSection(`#${entry.target.id}`);
+                        setActiveSection(`/#${entry.target.id}`);
                     }
                 });
             },
