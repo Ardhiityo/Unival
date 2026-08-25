@@ -76,7 +76,7 @@ export default function Header() {
         >
             <nav className="island flex items-center justify-center gap-3 rounded-full px-3 py-2 sm:px-4 w-[calc(100vw-1.5rem)] sm:w-[calc(100vw-2rem)] max-w-6xl">
                 <Link
-                    href="#home"
+                    href="/#home"
                     className="flex shrink-0 items-center gap-2 pl-1 pr-2"
                 >
                     <span className="logo-mark">
