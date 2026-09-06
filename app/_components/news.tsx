@@ -42,15 +42,15 @@ export function News() {
 
     return (
         <>
-            <section id="berita" className="px-4 py-20 sm:py-24">
+            <main className="px-4 py-20 sm:py-24">
                 <div className="mx-auto max-w-6xl">
                     <Reveal>
-                        <div className="mx-auto max-w-2xl text-center">
+                        <section id="berita" className="mx-auto max-w-2xl text-center">
                             <span className="pill">Berita &amp; Agenda</span>
                             <h2 className="section-title mt-4">
                                 Kabar Terbaru dari Kampus
                             </h2>
-                        </div>
+                        </section>
                     </Reveal>
                     <div className="mt-12 place-items-center grid items-stretch gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                         {news.slice(0, news.length).map((news: NewsItem, i: number) => (
@@ -102,7 +102,7 @@ export function News() {
                         </div>
                     )}
                 </div>
-            </section>
+            </main>
         </>
     )
 }

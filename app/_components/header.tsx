@@ -11,7 +11,7 @@ const navItems = [
     { href: "/#fakultas", label: "Fakultas" },
     { href: "/#layanan", label: "Layanan" },
     { href: "/#berita", label: "Berita" },
-    { href: "/#contact", label: "Contact" },
+    { href: "/#kontak", label: "Kontak" },
 ];
 
 export default function Header() {

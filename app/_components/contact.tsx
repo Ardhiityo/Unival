@@ -8,8 +8,8 @@ import { IoLocationOutline, IoMailOutline } from "react-icons/io5"
 
 export default function Contact() {
     return (
-        <section id="contact" className="px-4 py-20 sm:py-24">
-            <div className="mx-auto max-w-6xl">
+        <main className="px-4 py-20 sm:py-24">
+            <section id="kontak" className="mx-auto max-w-6xl">
                 <Reveal>
                     <div className="mx-auto max-w-2xl text-center">
                         <span className="pill">Hubungi Kami</span>
@@ -25,7 +25,7 @@ export default function Contact() {
                                         <BsTelephone className="dark:text-brand-200" />
                                     </div>
                                     <div>
-                                        <p className="font-semibold"> Telepon</p>
+                                        <p className="font-semibold">Telepon</p>
                                         <a href="tel:+02547877057" className="link">
                                             (0254) 7877057
                                         </a>
@@ -102,7 +102,7 @@ export default function Contact() {
                         </div>
                     </Reveal>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
     )
 }

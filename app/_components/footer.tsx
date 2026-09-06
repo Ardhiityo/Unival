@@ -39,6 +39,9 @@ export default function Footer() {
                                 <Link href="/#fakultas">Fakultas</Link>
                             </li>
                             <li>
+                                <Link href="/#layanan">Layanan</Link>
+                            </li>
+                            <li>
                                 <Link href="/#berita">Berita</Link>
                             </li>
                         </ul>
@@ -65,7 +68,7 @@ export default function Footer() {
                         <ul className="footer-list">
                             <li>
                                 <a
-                                    href="https://instagram.com/universitasnexus"
+                                    href="https://www.instagram.com/humas_unival"
                                     target="_blank"
                                     rel="noopener"
                                 >
@@ -74,7 +77,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://facebook.com/universitasnexus"
+                                    href="https://www.facebook.com/share/1CGXwtSxKG/"
                                     target="_blank"
                                     rel="noopener"
                                 >
@@ -83,7 +86,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://youtube.com/@universitasnexus"
+                                    href="https://www.youtube.com/@al-khairiyahtv432"
                                     target="_blank"
                                     rel="noopener"
                                 >

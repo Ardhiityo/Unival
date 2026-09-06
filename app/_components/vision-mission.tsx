@@ -32,10 +32,10 @@ const missions = [
 
 export function VisionMission() {
     return (
-        <section id="visimisi" className="px-4 py-20 sm:py-24">
+        <div className="px-4 py-20 sm:py-24">
             <div className="mx-auto max-w-6xl">
                 <Reveal>
-                    <div className="mx-auto max-w-2xl text-center">
+                    <section id="visimisi" className="mx-auto max-w-2xl text-center">
                         <span className="pill">Arah Kami</span>
                         <h2 className="section-title mt-4">
                             Visi &amp; Misi Universitas
@@ -44,7 +44,7 @@ export function VisionMission() {
                             Landasan yang memandu setiap keputusan akademik dan pelayanan
                             kami.
                         </p>
-                    </div>
+                    </section>
                 </Reveal>
 
                 <div className="mt-12 grid gap-6 lg:grid-cols-5">
@@ -72,6 +72,6 @@ export function VisionMission() {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

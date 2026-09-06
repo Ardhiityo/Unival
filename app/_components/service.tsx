@@ -37,15 +37,15 @@ export function Service() {
     };
 
     return (
-        <section id="layanan" className="px-4 py-20 sm:py-24">
+        <main className="px-4 py-20 sm:py-24">
             <div className="mx-auto max-w-6xl">
                 <Reveal>
-                    <div className="mx-auto max-w-2xl text-center">
+                    <section id="layanan" className="mx-auto max-w-2xl text-center">
                         <span className="pill">Layanan Digital</span>
                         <h2 className="section-title mt-4">
                             Semua Kebutuhan Akademik dalam Satu Portal
                         </h2>
-                    </div>
+                    </section>
                 </Reveal>
                 <div className="mt-12 mx-auto grid items-stretch gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                     {services.map((service, index) => (
@@ -87,6 +87,6 @@ export function Service() {
                     )
                 }
             </div>
-        </section>
+        </main>
     )
 }

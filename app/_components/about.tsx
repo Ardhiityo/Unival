@@ -2,13 +2,14 @@
 
 import Image from "next/image"
 import Reveal from "./reveal"
+import Link from "next/link"
 
 export function About() {
     return (
-        <section id="tentang" className="px-4 py-20 sm:py-28 relative">
+        <main className="px-4 py-20 sm:py-28 relative">
             <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
                 <Reveal>
-                    <div className="tilt-card glass rounded-4xl p-3 ">
+                    <section id="tentang" className="tilt-card glass rounded-4xl p-3 ">
                         <Image
                             src="/assets/images/syamun.webp"
                             alt="Suasana kampus Universitas Al-Khairiyah"
@@ -23,7 +24,7 @@ export function About() {
                             </p>
                             <p className="font-display text-base font-bold">Brigjend KH. {"Syam'un"}</p>
                         </div>
-                    </div>
+                    </section>
                     <div className="mt-4 glass overflow-hidden rounded-4xl p-3">
                         <video
                             className="w-full rounded-3xl"
@@ -80,11 +81,11 @@ export function About() {
                             </p>
                         </div>
                     </div>
-                    <a href="#fakultas" className="btn-primary btn-lg mt-8">
+                    <Link href="#fakultas" className="btn-primary btn-lg mt-8">
                         Selengkapnya
-                    </a>
+                    </Link>
                 </Reveal>
             </div>
-        </section>
+        </main>
     )
 }
