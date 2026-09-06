@@ -1,5 +1,3 @@
-"use client"
-
 export function BackgroundGradient() {
     return (
         <div className="bg-orbs" aria-hidden="true">

@@ -17,6 +17,7 @@ export default function NewsDetail({ news }: { news: NewsItem }) {
                             alt={news.title}
                             width={1200}
                             height={600}
+                            loading="lazy"
                         />
                     </div>
                     <div className="news-detail-body news-detail-page-body">

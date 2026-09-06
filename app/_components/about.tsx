@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image"
 import Reveal from "./reveal"
 import Link from "next/link"
@@ -16,6 +14,7 @@ export function About() {
                             width={1280}
                             height={896}
                             loading="lazy"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                             className="w-full rounded-3xl object-cover"
                         />
                         <div className="floater floater-slow glass absolute -lef-15 bottom-3 hidden rounded-2xl px-4 py-3 sm:block">

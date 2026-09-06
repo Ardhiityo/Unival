@@ -61,6 +61,7 @@ export function Faculties() {
                                         loading="lazy"
                                         width={1024}
                                         height={640}
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                         className="h-44 w-full object-cover"
                                     />
                                 </div>

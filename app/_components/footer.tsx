@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +10,7 @@ export default function Footer() {
                     <div className="md:col-span-1">
                         <div className="flex flex-col items-center gap-2">
                             <span className="logo-mark">
-                                <Image src={"/unival.webp"} width={500} height={500} alt="unival" />
+                                <Image src={"/unival.webp"} width={500} height={500} alt="unival" loading="lazy" />
                             </span>
                             <span className="font-display text-base font-bold">
                                 Universitas Al-Khairiyah

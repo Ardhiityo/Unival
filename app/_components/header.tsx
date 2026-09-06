@@ -17,7 +17,6 @@ const navItems = [
 
 export default function Header() {
     const pathname = usePathname();
-    const [isDark, setIsDark] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [shrink, setShrink] = useState(false);
     const [activeSection, setActiveSection] = useState("");
@@ -29,7 +28,6 @@ export default function Header() {
             "nexus-theme",
             html.classList.contains("dark") ? "dark" : "light",
         );
-        setIsDark(html.classList.contains("dark"));
     };
 
     const closeMenu = () => setMenuOpen(false);
@@ -59,20 +57,6 @@ export default function Header() {
     }, []);
 
     useEffect(() => {
-        const check = () => {
-            const dark = document.documentElement.classList.contains("dark");
-            setIsDark(dark);
-        };
-        check();
-        const observer = new MutationObserver(check);
-        observer.observe(document.documentElement, {
-            attributes: true,
-            attributeFilter: ["class"],
-        });
-        return () => observer.disconnect();
-    }, []);
-
-    useEffect(() => {
         const sections = document.querySelectorAll("section[id]");
         const observer = new IntersectionObserver(
             (entries) => {
@@ -99,7 +83,7 @@ export default function Header() {
                     className="flex shrink-0 items-center gap-2 pl-1 pr-2"
                 >
                     <span className="logo-mark">
-                        <Image src={"/unival.webp"} height={500} width={500} alt="unival" />
+                        <Image src={"/unival.webp"} height={500} width={500} alt="unival" preload />
                     </span>
                     <span className="hidden sm:block leading-tight">
                         <span className="block font-display text-sm font-800 font-bold tracking-tight">
