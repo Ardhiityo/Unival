@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -15,6 +16,7 @@ const navItems = [
 ];
 
 export default function Header() {
+    const pathname = usePathname();
     const [isDark, setIsDark] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [shrink, setShrink] = useState(false);
@@ -31,6 +33,23 @@ export default function Header() {
     };
 
     const closeMenu = () => setMenuOpen(false);
+
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (!hash) return;
+
+        const scrollToHash = () => {
+            const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+            target?.scrollIntoView({ behavior: "smooth", block: "start" });
+        };
+        const frame = window.requestAnimationFrame(scrollToHash);
+        const retry = window.setTimeout(scrollToHash, 500);
+
+        return () => {
+            window.cancelAnimationFrame(frame);
+            window.clearTimeout(retry);
+        };
+    }, [pathname]);
 
     useEffect(() => {
         const onScroll = () => setShrink(window.scrollY > 40);

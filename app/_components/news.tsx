@@ -1,12 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import Reveal from "./reveal";
 import { NewsItem } from "../types/general";
 import Image from "next/image";
 import Link from "next/link";
 import { environment } from "../config/environment";
 import DOMPurify from "dompurify";
+import Reveal from "@/app/_components/reveal";
 
 export function News() {
     const [isPending, setIsPending] = useState(false);

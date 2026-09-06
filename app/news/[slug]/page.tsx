@@ -5,9 +5,9 @@ import { useParams } from "next/navigation";
 import Header from "../../_components/header";
 import Footer from "../../_components/footer";
 import { BackgroundGradient } from "../../_components/background-gradient";
-import NewsDetail from "../../_components/news-detail";
 import { environment } from "../../config/environment";
 import { NewsItem } from "../../types/general";
+import NewsDetail from "./_components/news-detail";
 
 export default function NewsDetailPage() {
     const { slug } = useParams<{ slug: string }>();

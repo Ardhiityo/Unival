@@ -1,9 +1,9 @@
 "use client"
 
-import { NewsItem } from "../types/general";
 import Image from "next/image";
 import DOMPurify from "dompurify";
 import Link from "next/link";
+import { NewsItem } from "@/app/types/general";
 
 export default function NewsDetail({ news }: { news: NewsItem }) {
     return (
