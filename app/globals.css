@@ -870,24 +870,25 @@ body {
 }
 
 .news-detail-img-wrap {
-  width: 100%;
-  height: 18rem;
+  height: 100%;
   overflow: hidden;
+}
+
+.news-detail-img-wrap img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  object-fit: contain;
 }
 
 @media (min-width: 640px) {
   .news-detail-img-wrap {
-    height: 22rem;
+    height: 40rem;
     border-radius: 1.5rem;
     margin: 1rem 1rem 0;
     width: calc(100% - 2rem);
   }
-}
-
-.news-detail-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .news-detail-body {
