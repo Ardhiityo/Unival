@@ -25,7 +25,7 @@ export default function NewsDetail({ news }: { news: NewsItem }) {
                             {news.date}
                         </p>
                         <h1 className="text-lg font-bold mt-3">{news.title}</h1>
-                        <article className="mt-5 font-semibold article-responsive text-slate-700 dark:text-slate-300 leading-relaxed"
+                        <article className="mt-5 article-responsive text-slate-700 dark:text-slate-300 leading-relaxed"
                             dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(news.description),
                             }}>
