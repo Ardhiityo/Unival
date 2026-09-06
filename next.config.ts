@@ -14,10 +14,15 @@ const nextConfig: NextConfig = {
         pathname: "/storage/faculties/**",
       },
       {
-        protocol: "http",
-        hostname: "backend-unival.test",
-        pathname: "/storage/**",
+        protocol: "https",
+        hostname: "panel.unival-cilegon.ac.id",
+        pathname: "/storage/news/**",
       },
+      // {
+      //   protocol: "http",
+      //   hostname: "backend-unival.test",
+      //   pathname: "/storage/**",
+      // },
     ],
   }
 };

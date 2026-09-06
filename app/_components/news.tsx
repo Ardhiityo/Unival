@@ -65,7 +65,6 @@ export function News() {
                                             loading="lazy"
                                             width={1024}
                                             height={640}
-                                            unoptimized
                                             className="h-48 w-full object-cover"
                                         />
                                     </div>
