@@ -1,5 +1,3 @@
-"use client"
-
 import { BackgroundGradient } from "./background-gradient";
 import { VisionMission } from "./vision-mission";
 import { Faculties } from "./faculties";

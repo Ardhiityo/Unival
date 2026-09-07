@@ -1,5 +1,3 @@
-"use client"
-
 import { FaFacebook, FaInstagram } from "react-icons/fa6"
 import Reveal from "./reveal"
 import { FaYoutube } from "react-icons/fa"

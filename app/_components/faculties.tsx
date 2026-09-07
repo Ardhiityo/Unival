@@ -59,8 +59,8 @@ export function Faculties() {
                                         src={faculty.image_url}
                                         alt={faculty.title}
                                         loading="lazy"
-                                        width={1024}
-                                        height={640}
+                                        width={500}
+                                        height={500}
                                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                         className="h-44 w-full object-cover"
                                     />

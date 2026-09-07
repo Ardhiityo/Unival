@@ -95,8 +95,8 @@ export function HeroSection() {
                                 <Image
                                     src="/assets/images/hero.webp"
                                     alt="Visual 3D gedung Universitas Al-Khairiyah"
-                                    width={1280}
-                                    height={1024}
+                                    width={500}
+                                    height={500}
                                     preload
                                     sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="h-full w-full rounded-3xl object-cover"

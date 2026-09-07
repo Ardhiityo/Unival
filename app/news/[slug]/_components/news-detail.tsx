@@ -15,8 +15,8 @@ export default function NewsDetail({ news }: { news: NewsItem }) {
                         <Image
                             src={news.image_url ?? '/unival.webp'}
                             alt={news.title}
-                            width={1200}
-                            height={600}
+                            width={500}
+                            height={500}
                             loading="lazy"
                         />
                     </div>

@@ -11,8 +11,8 @@ export function About() {
                         <Image
                             src="/assets/images/syamun.webp"
                             alt="Suasana kampus Universitas Al-Khairiyah"
-                            width={1280}
-                            height={896}
+                            width={500}
+                            height={500}
                             loading="lazy"
                             sizes="(max-width: 1024px) 100vw, 50vw"
                             className="w-full rounded-3xl object-cover"

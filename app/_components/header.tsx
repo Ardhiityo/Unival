@@ -83,7 +83,7 @@ export default function Header() {
                     className="flex shrink-0 items-center gap-2 pl-1 pr-2"
                 >
                     <span className="logo-mark">
-                        <Image src={"/unival.webp"} height={500} width={500} alt="unival" preload />
+                        <Image src={"/unival.webp"} height={500} width={500} alt="unival" loading="lazy" />
                     </span>
                     <span className="hidden sm:block leading-tight">
                         <span className="block font-display text-sm font-800 font-bold tracking-tight">
