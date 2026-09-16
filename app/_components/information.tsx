@@ -24,7 +24,7 @@ export function Information() {
                             >
                                 Daftar Sekarang
                             </a>
-                            <a href="#contact" className="btn-outline-white btn-lg">
+                            <a href="#kontak" className="btn-outline-white btn-lg">
                                 Konsultasi Sekarang
                             </a>
                         </div>
